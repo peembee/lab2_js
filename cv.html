@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cv</title>
+    <!-- Navigation-Menu -->
+    <nav class="navigationMenu">
+        <ul>
+            <li>
+              <a href="index.html" title="Home Page"><img id="navIcons" class="nonCurrentPage" src="img/home.png" alt="Home-Page">
+                <p class="navTextIcons">Hem</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="cv.html"><img id="navIcons" class="navCurrentPageColor" src="img/article.png" alt="Resumé">
+                <p class="navTextIcons">CV</p>
+              </a>
+            </li>
+
+            <li>  
+              <a href="portfolio.html" title="See Portfolio"><img id="navIcons" class="nonCurrentPage" src="img/portfolio.png" alt="Portfolio">
+                <p class="navTextIcons">Projekts</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html" title="Click here for more information"><img id="navIcons" class="nonCurrentPage" src="img/person.png" alt="About me">
+                <p class="navTextIcons">Om mig</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" title="Contact me" target="_blank"><img id="navIcons" class="nonCurrentPage" src="img/contactMail.png" alt="Contact me">
+                <p class="navTextIcons">Kontakt</p>
+              </a>
+            </li>            
+        </ul>   
+      </nav>
+</head>
+<body>         
+  <header>
+    <h3>Resumé</h3> 
+  </header>
+    <!-- Modal-easterEgg -->
+  <div id="modal" class="easterEggModal">    
+    <div class="easterEggModalContent">
+      <header class="easterEggModalHeader">Roliga eller tråkiga vitsar</header>
+      <button onclick="closeModal()" class="easterEggClose">X</button>
+      <p id="modalText" class="easterEggModalText"></p>
+    </div>
+  </div>
+  <!---------------->
+  <div id="cv" class="indexPageText resumeTitleInformation "></div>
+  <footer>Created by <a href="https://github.com/peembee" target="_blank">https://github.com/peembee</a> © 2023 </footer>
+  <script src="/JavaScript/main.js"></script>       
+</body>
+</html>

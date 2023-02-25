@@ -1,0 +1,44 @@
+[
+    {
+        "Arbetsgivare": "Jula Hudiksvall",
+        "From": "2017",
+        "Tom": "2023",
+        "Beskrivning": "Medarbetare - Fokus på hela butiken."
+    },
+    {
+        "Arbetsgivare": "Elgiganten Sundsvall",
+        "From": "2016",
+        "Tom": "2017",
+        "Beskrivning": "Huvudfokus här var försäljning av Mobiltelefoner, men även andra produkter."
+    },
+    {
+        "Arbetsgivare": "Elgiganten Hudiksvall",
+        "From": "2011",
+        "Tom": "2016",
+        "Beskrivning": "Här var det avdelningen för mobiltelefoner som var mitt fokus, försäljning/ beställningar."
+    }, 
+    {
+        "Skola": "Edugrade", 
+        "Utbildning": "Systemutvecklare",
+        "From": "2022",
+        "Tom": "2024"
+    },
+    {
+        "Skola": "Hermods",
+        "Kurser": "Programmering 1 (C#), Programmering 2 (C#)",
+        "From": "2020",
+        "Tom": "2022"
+    },
+    {
+        "Skola": "CUL Komvux - Hudiksvall",
+        "Kurser": "Mattematik 2b, Mattematik 3b, Engelska 6",
+        "From": "2018",
+        "Tom": "2019"
+    },
+    {       
+        "Skola": "Hedbergska, Sundsvall",
+        "Utbildning": "Hotell och Restaurang",
+        "From": "2009",
+        "Tom": "2011"
+    }
+]

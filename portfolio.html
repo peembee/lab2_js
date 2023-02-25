@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>portfölj</title>
+    <!-- Navigation-Menu -->
+    <nav class="navigationMenu">
+        <ul>
+            <li>
+              <a href="index.html" title="Home Page"><img id="navIcons" class="nonCurrentPage" src="img/home.png" alt="Home-Page">
+                <p class="navTextIcons">Hem</p>
+              </a>
+          </li>
+
+            <li>
+              <a href="cv.html" title="See Resumé"><img id="navIcons" class="nonCurrentPage" src="img/article.png" alt="Resumé">
+                <p class="navTextIcons">CV</p>
+              </a>
+          </li>
+
+            <li>
+              <a href="portfolio.html"><img id="navIcons" class="navCurrentPageColor" src="img/portfolio.png" alt="Portfolio">
+                <p class="navTextIcons">Projekts</p>
+              </a>
+          </li>
+
+            <li>
+              <a href="about.html" title="Click here for more information"><img id="navIcons" class="nonCurrentPage" src="img/person.png" alt="About me">
+                <p class="navTextIcons">Om mig</p>
+              </a>
+          </li>
+
+            <li>
+              <a href="contact.html" title="Contact me" target="_blank"><img id="navIcons" class="nonCurrentPage" src="img/contactMail.png" alt="Contact me">
+                <p class="navTextIcons">Kontakt</p>
+              </a>
+          </li>            
+        </ul>   
+      </nav>
+</head>
+<body>
+     <!-- Modal-easterEgg -->
+     <div id="modal" class="easterEggModal">    
+      <div class="easterEggModalContent">
+        <header class="easterEggModalHeader">Roliga eller tråkiga vitsar</header>
+        <button onclick="closeModal()" class="easterEggClose">X</button>
+        <p id="modalText" class="easterEggModalText"></p>
+      </div>
+    </div>
+    <!------------->
+  <header>  
+    <h3>Portfolio</h3>  
+  </header>      
+  <section class="portfolio">
+          <h3 class="portfolio">Edugrade</h3>
+              <ul>
+                  <li>
+                      <h3 class="portfolioProjektName">Projekt:</h3>
+
+                      <p class="describeProject">                
+                        SkolPortalen                              
+                        <a class="portfolioLinkToProject" href="#skolportalen">                             
+                          <button class="button">INFO</button>          
+                      </a> 
+                      <img class="IMGportfolio" src="/img/Skolportalen.png" alt="Project Image">
+                      <img class="IMGportfolio" src="/img/ER.png" alt="Project ER-diagram">                                                                                                                 
+                      </p>              
+
+                      <p class="describeProject">                
+                          Banksimulator   
+                          <a class="portfolioLinkToProject" href="#BankSimulator">                             
+                              <button class="button">INFO</button>          
+                          </a>                
+                          <img class="IMGportfolio" src="/img/bank1.png" alt="Project Image">  
+                          <img class="IMGportfolio" src="/img/bank2.png" alt="Project Image"> 
+                          <img class="IMGportfolio" src="/img/bankUML.png" alt="Project Image">                                                                                                 
+                          </p>
+
+                          <p class="describeProject">                
+                          Collection Generics   
+                          <a class="portfolioLinkToProject" href="#CollectionGenerics">                             
+                              <button class="button">INFO</button>          
+                          </a>              
+                          <img class="IMGportfolio" src="/img/imgCollectionGeneric.png" alt="Project Image">                                                                                                     
+                          </p>
+
+                          <p class="describeProject">                
+                          Polymorphism   
+                          <a class="portfolioLinkToProject" href="#Polymorphism">                             
+                              <button class="button">INFO</button>          
+                          </a>          
+                          <img class="IMGportfolio" src="/img/imgPolymorphism.png" alt="Project Image">                                                                                                        
+                          </p>
+
+                          <p class="describeProject">                
+                          Arv - Zoo   
+                          <a class="portfolioLinkToProject" href="#Arv">                             
+                              <button class="button">INFO</button>          
+                          </a>                   
+                          <img class="IMGportfolio" src="/img/imgZoo1.png" alt="Project Image">
+                          <img class="IMGportfolio" src="/img/imgZoo2.png" alt="Project Image">                                                                                               
+                          </p>
+
+                          <p class="describeProject">                
+                          NumbersGame   
+                          <a class="portfolioLinkToProject" href="#NumbersGame">                             
+                              <button class="button">INFO</button>          
+                          </a>   
+                          <img class="IMGportfolio" src="/img/imgNumbersGame1.png" alt="Project Image">                                                                                                               
+                          </p>
+              </li>
+          </ul>
+        </section> 
+  <section class="portfolio">              
+        <h3 class="portfolio">Hermods (programmering 2)</h3>
+        <ul>
+            <li>
+                <h3 class="portfolioProjektName">Projekt:</h3>
+                <p class="describeProject">                
+                    Petowner - winForms   
+                    <a class="portfolioLinkToProject" href="#Petowner">                             
+                       <button class="button">INFO</button>          
+                   </a> 
+
+                   <img class="IMGportfolio" src="/img/imgPetownerForm1.png" alt="Project Image">   
+                   <img class="IMGportfolio" src="/img/imgPetownerForm2.png" alt="Project Image">                                                                                                                
+                  </p>                
+
+                <p class="describeProject">                
+                Joppe Animals   
+                <a class="portfolioLinkToProject" href="#JoppesAnimals">                             
+                    <button class="button">INFO</button>          
+                </a>      
+                <img class="IMGportfolio" src="/img/imgJoppesAnimal.png" alt="Project Image">                                                                                                              
+                </p>
+
+                <p class="describeProject">                
+                Dartgame   
+                <a class="portfolioLinkToProject" href="#DartGame">                             
+                    <button class="button">INFO</button>          
+                </a>    
+                <img class="IMGportfolio" src="/img/imgDartgame1.png" alt="Project Image">   
+                <img class="IMGportfolio" src="/img/imgDartGame2.png" alt="Project Image">                                                                                                               
+                </p>
+            </li>
+        </ul> 
+  </section>  
+    
+  <!-- ----------------------------------    Modals         ---------------------------- -->
+
+  <!-- Skolprojektet -->    
+    <div id="skolportalen" class="modal">
+        <header class="headerModal"> 
+            <h2>Skolportalen</h2>
+        </header>
+         <!-- Main Content -->
+        <div class="mainTextModal"> <!-- Modal content -->                
+          <p>Ett skolsystem där man kan söka/hämta/sätta in data inom systemet.</p>     
+          <a href="https://github.com/peembee/SkolPortalen" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+        </div>
+        <footer class="footerModal">
+             <!-- Close modal -->
+            <a href="#">
+                <button class="modalButton">X</button>
+            </a>
+        </footer>
+      </div> 
+        
+ <!-- BankSimulator -->  
+ <div id="BankSimulator" class="modal">
+    <header class="headerModal"> 
+         <h2>Banken</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Banksimulatorn låter dig sätta in pengar, lägga upp sparkonton etc..</p>       
+      <a href="https://github.com/peembee/BankSimulatorV2" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+ 
+
+<!-- CollectionGenerics -->  
+<div id="CollectionGenerics" class="modal">
+    <header class="headerModal"> 
+         <h2>Collection Generics</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Uppgift - Hantera Stack etc..</p>       
+      <a href="https://github.com/peembee/-Lab8-CollectionGenerics" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+
+
+<!-- Polymorphism -->  
+<div id="Polymorphism" class="modal">
+    <header class="headerModal"> 
+         <h2>Polymorphism</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Kalkulator för Rektangel, Fyrkant, Cirkel</p>       
+      <a href="https://github.com/peembee/OOP-Lab-7-Polymorphism" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+
+  
+<!-- Lab6 - Arv -->  
+<div id="Arv" class="modal">
+    <header class="headerModal"> 
+         <h2>The Zoo</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Ett Zoospel, lek, mata och ta hand om djuren</p>       
+      <a href="https://github.com/peembee/OOP-Lab-6-Arv" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+
+  
+<!-- NumbersGame -->  
+<div id="NumbersGame" class="modal">
+    <header class="headerModal"> 
+         <h2>NumberGame</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Lotterispel - Gissa på ett tal och du kanske vinner</p>       
+      <a href="https://github.com/peembee/NumbersGame" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+
+  
+<!-- Petowner - winForms -->  
+<div id="Petowner" class="modal">
+    <header class="headerModal"> 
+         <h2>Petowner</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Windows form applikation för ett Zoo-spel. Vidareutvecklad från JoppesAnimals</p>   
+      <a href="https://github.com/peembee/PetOwner-Assign-Progg2-winForms-" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+
+  
+<!-- Joppes Animals -->  
+<div id="JoppesAnimals" class="modal">
+    <header class="headerModal"> 
+         <h2>Joppes Animals</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Ett Zoo-spel där det går ut på att ta hand om djuren som finns där</p>       
+      <a href="https://github.com/peembee/JoppesAnimalsConsole---progg2" title="Go to project" target="_blank" >GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+
+  
+<!-- DartGame --> 
+<div id="DartGame" class="modal">
+    <header class="headerModal"> 
+         <h2>Dart-Game</h2>
+    </header>
+     <!-- Main Content -->
+    <div class="mainTextModal"> <!-- Modal content -->                
+      <p>Utmana en kompis eller kanske botten på en dartmatch</p>
+      <a href="https://github.com/peembee/DartGame-Assign---Progg2" title="Go to project" target="_blank">GitHub</a> <!-- Link to projekt -->
+    </div>
+    <footer class="footerModal">
+         <!-- Close modal -->
+        <a href="#">
+            <button class="modalButton">X</button>
+        </a>
+    </footer>
+  </div> 
+
+  <footer>Created by <a href="https://github.com/peembee" target="_blank">https://github.com/peembee</a> © 2023 </footer>
+  <script src="/JavaScript/main.js"></script>   
+</body>
+</html>

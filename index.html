@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Homepage</title>
+    <!-- Navigation-Menu -->
+    <nav class="navigationMenu">
+        <ul>          
+            <li>              
+              <a href="index.html"><img id="navIcons" class="navCurrentPageColor" src="img/home.png" alt="Home-Page">
+                 <p class="navTextIcons">Hem</p>
+              </a>
+            </li>
+            
+            <li>
+              <a href="cv.html" title="See Resumé"><img id="navIcons" class="nonCurrentPage" src="img/article.png" alt="Resumé">
+                <p class="navTextIcons">CV</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="portfolio.html" title="See Portfolio"><img id="navIcons" class="nonCurrentPage" src="img/portfolio.png" alt="Portfolio">
+                <p class="navTextIcons">Projekts</p>
+              </a>
+            </li>
+            <li>
+
+              <a href="about.html" title="Click here for more information"><img id="navIcons" class="nonCurrentPage" src="img/person.png" alt="About me">
+                <p class="navTextIcons">Om mig</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" title="Contact me" target="_blank"><img id="navIcons" class="nonCurrentPage" src="img/contactMail.png" alt="Contact me">
+                <p class="navTextIcons">Kontakt</p>
+              </a>
+            </li>               
+          </ul>       
+    </nav>
+</head>
+<body> 
+        <!-- Modal-easterEgg -->
+        <div id="modal" class="easterEggModal">    
+          <div class="easterEggModalContent">
+            <header class="easterEggModalHeader">Roliga eller tråkiga vitsar</header>
+            <button onclick="closeModal()" class="easterEggClose">X</button>
+            <p id="modalText" class="easterEggModalText"></p>
+          </div>
+        </div>
+        <!--------------------->
+        
+  <header>    
+    <h3>Homepage</h3>
+  </header>
+
+    <!-- managing the set-background-buttons-->
+      <div id="circelContainer">
+          <a href="index.html">
+            <button class="btnCircelOne"></button> 
+          </a>   
+          <button onclick="setBackgroundColor('rgba(13, 13, 13, 0.75)')" class="btnCircelTwo"></button>
+          <button onclick="setBackgroundColor('rgb(230, 198, 254)')" class="btnCircelThree"></button>       
+      </div> 
+
+    <!-- Main information-->
+        <img class="imgIndexCat" src="img/cat.png" alt="Flying Cat">
+        <div class="indexPageText"> 
+            <h4>Välkommen till min webbsida..</h4>          
+            <h5>Varsågod att kika runt</h5>
+            <p>        
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque animi tenetur iusto beatae perspiciatis laudantium,
+                aliquam ipsam quaerat expedita ipsa. Magnam recusandae earum ad esse,
+                repellendus tenetur provident labore praesentium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                Velit ea unde officiis necessitatibus amet, maxime quasi quas
+                pariatur rerum similique molestias fuga sapiente iure incidunt
+                blanditiis dolore in? Quos, nulla.
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque animi tenetur iusto beatae perspiciatis laudantium,
+                aliquam ipsam quaerat expedita ipsa. Magnam recusandae earum ad esse,
+                repellendus tenetur provident labore praesentium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        
+                Velit ea unde officiis necessitatibus amet, maxime quasi quas
+                pariatur rerum similique molestias fuga sapiente iure incidunt
+                blanditiis dolore in? Quos, nulla.
+
+                    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Cumque animi tenetur iusto beatae perspiciatis laudantium,
+                aliquam ipsam quaerat expedita ipsa. Magnam recusandae earum ad esse,
+                repellendus tenetur provident labore praesentium.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        
+                Velit ea unde officiis necessitatibus amet, maxime quasi quas
+                pariatur rerum similique molestias fuga sapiente iure incidunt
+                blanditiis dolore in? Quos, nulla.
+            </p>
+        </div>     
+        <p class="indexPageText">    
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Cumque animi tenetur iusto beatae perspiciatis laudantium,
+          aliquam ipsam quaerat expedita ipsa. Magnam recusandae earum ad esse,
+          repellendus tenetur provident labore praesentium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+          Velit ea unde officiis necessitatibus amet, maxime quasi quas
+          pariatur rerum similique molestias fuga sapiente iure incidunt
+          blanditiis dolore in? Quos, nulla.
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Cumque animi tenetur iusto beatae perspiciatis laudantium,
+          aliquam ipsam quaerat expedita ipsa. Magnam recusandae earum ad esse,
+          repellendus tenetur provident labore praesentium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+          Velit ea unde officiis necessitatibus amet, maxime quasi quas
+          pariatur rerum similique molestias fuga sapiente iure incidunt
+          blanditiis dolore in? Quos, nulla.
+
+              
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Cumque animi tenetur iusto beatae perspiciatis laudantium,
+          aliquam ipsam quaerat expedita ipsa. Magnam recusandae earum ad esse,
+          repellendus tenetur provident labore praesentium.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+          Velit ea unde officiis necessitatibus amet, maxime quasi quas
+          pariatur rerum similique molestias fuga sapiente iure incidunt
+          blanditiis dolore in? Quos, nulla.
+       </p>
+
+    <footer>Created by <a href="https://github.com/peembee" target="_blank">https://github.com/peembee</a> © 2023 </footer>
+  <script src="/JavaScript/main.js"></script>
+</body>
+</html>

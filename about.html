@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>about me</title>
+    <!-- Navigation-Menu -->
+    <nav class="navigationMenu">
+        <ul>
+            <li>
+                <a href="index.html" title="Homepage"><img id="navIcons" class="nonCurrentPage" src="img/home.png" alt="Home-Page">
+                    <p class="navTextIcons">Hem</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="cv.html" title="See Resumé"><img id="navIcons" class="nonCurrentPage" src="img/article.png" alt="Resumé">
+                    <p class="navTextIcons">CV</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="portfolio.html" title="See Portfolio"><img id="navIcons" class="nonCurrentPage" src="img/portfolio.png" alt="Portfolio">
+                    <p class="navTextIcons">Projekts</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html"><img id="navIcons" class="navCurrentPageColor" src="img/person.png" alt="About me">
+                    <p class="navTextIcons">Om mig</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html" title="Contact me" target="_blank"><img id="navIcons" class="nonCurrentPage" src="img/contactMail.png" alt="Contact me">
+                    <p class="navTextIcons">Kontakt</p>
+                </a>
+            </li>             
+        </ul>
+      </nav>
+</head>
+<body>
+    <!-- Modal-easterEgg -->
+    <div id="modal" class="easterEggModal">    
+        <div class="easterEggModalContent">
+            <header class="easterEggModalHeader">Roliga eller tråkiga vitsar</header>
+            <button onclick="closeModal()" class="easterEggClose">X</button>
+            <p id="modalText" class="easterEggModalText"></p>
+        </div>
+    </div>
+    <!------->
+    <header>
+         <h3>About Me</h3>
+    </header>
+    <div>
+        <img class="avatar" src="img/avataaars.png" title="Avatar Profile-Picture" alt="Avatar Profile">  
+        <p class="aboutMeInformation">
+            Jag heter Mohammed Boukhedimi, 30 år gammal och bor i Hudiksvall.
+            Här bor jag med min sambo och mina tre barn <br><br>
+
+
+            Just nu studerar jag som systemutvecklare i Hudiksvall, 
+            på yrkeshögskolan Edugrade. Utbildningen fortsätter fram till sommaren 2024 där sista
+            året av utbildningen består mestadels av en LIA. <br><br>
+
+            På fritiden så tillbringar jag mest tid till familjen men annars så tycker jag om
+            att åka t.ex skateboard/snowboard, gillar även gaming när tiden finns<br><br> 
+            
+            Jag är uppväxt i Hudiksvall och men bodde även några år i Sundsvall under studietiden, 
+            sedan så började jag jobba på Elgiganten i Hudiksvall samt därefter Elgiganten i Sundsvall.
+            Men just nu jobbar jag på Jula sedan några år tillbaka. 
+        </p>  
+    </div>   
+    <footer>Created by <a href="https://github.com/peembee" target="_blank">https://github.com/peembee</a> © 2023 </footer>
+    <script src="/JavaScript/main.js"></script>   
+</body>
+</html>

@@ -1,0 +1,599 @@
+/* standard design */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: monospace,Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+/*  -------------Customize navigation-bar ------------------------------- */
+#navIcons{
+    margin-top: 25px;
+    border-bottom: 5px; 
+}
+.navigationMenu {
+    display: block;  
+    width: 100vw;
+    height: 100%;
+    background: rgba(9, 64, 59, 0.895);
+    box-shadow: 15px 15px 15px rgba(30, 75, 112, 0.795);    
+}
+/* customize navlist */
+.navigationMenu ul li{
+    list-style: none;
+    display: inline-block;    
+    line-height: 5px; 
+    margin-left: 5%;  
+}
+.nonCurrentPage:hover{
+    color: #f5e0e0; 
+    box-shadow: 0px 0px 10px rgb(247, 247, 247);
+    transition: all 0.3s;
+}
+.navCurrentPageColor{       
+    color: #f5e0e0; 
+    box-shadow: 0px 0px 5px rgb(81, 255, 0);
+    border-style: outset;
+    border-width: 1px;    
+}
+.navTextIcons{
+    position: relative;
+    left: -5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+}   
+
+/* --------------------  Tags ------------------------------- */
+
+body{
+    background: linear-gradient(rgb(58, 175, 221), rgb(163, 70, 33));
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    background-color: black;  
+    font-size: 20px;
+    font-weight: bold;  
+    align-self: flex-end;
+    margin-top: 10%;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: rgba(163, 163, 141, 0.705);
+    padding-top: 20px;
+}
+
+p{
+    padding: 5px;    
+}
+
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0805339c;
+    font-size: 40px;
+}
+
+.button{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: rgb(0, 255, 157);
+    font-weight: bold;
+    font-size: 30px;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 500px;  
+}
+.button:hover{
+    background-color:transparent;
+    border-style: outset;
+    border-color: rgba(255, 255, 255, 0.425);
+    box-shadow: 2px 1px 21px;
+    transition: all 0.25s ease-out;
+}
+.button:active{
+    background-color: rgba(110, 100, 100, 0.829);
+    font-size: 25px;
+    transition: 0.15s;
+    border-width: 4px;
+    border-color: rgba(125, 220, 234, 0.677);
+    border-style: inset;
+}
+
+/*  ------------------------MODAL ------------------------------- */
+
+.modal{ 
+    display: none;  
+}
+
+.modal:target {
+    width: 650px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    border-style: outset;
+    background: rgba(170, 171, 207, 0.974);    
+    border: 10px solid;
+    border-radius: 30px;   
+    border-color: rgba(239, 255, 236, 0.367);
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.732);
+    display: block;       
+}
+
+.headerModal{
+    font-size: 40px; 
+    text-align: center;
+    padding: 15px;
+    color: rgba(25, 22, 28, 0.694);
+    border-bottom: 4px solid rgba(8, 104, 67, 0.521);
+    box-shadow: 5px 5px 10px rgba(55, 113, 160, 0.589);    
+    border-radius: 30px 30px 0px 0px ;
+}  
+
+.mainTextModal{
+    color: beige;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgba(8, 104, 67, 0.521);
+    box-shadow: 5px 5px 10px rgba(30, 74, 110, 0.582);
+}
+
+.mainTextModal a{
+    color: rgba(2, 247, 255, 0.911);
+    background-color: rgba(18, 19, 18, 0.567);
+    border-style: outset;
+    font-size: 50px;
+    border-radius: 30px;
+    border-color: rgba(43, 120, 120, 0.381);   
+}
+
+.mainTextModal a:hover{
+    color: rgb(0, 255, 157);
+    background-color: rgba(24, 20, 20, 0);
+    box-shadow: 5px 5px 15px;
+    transition: 0.15s;    
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgba(0, 255, 255, 0.695);    
+}
+
+.mainTextModal a:active{
+    background-color: rgba(34, 86, 132, 0.87);
+    font-size: 40px;
+    transition: 0.3s;
+    border-style: inset;
+    border-width: 5px;
+    border-color: rgba(0, 0, 0, 0.714);    
+    transition: 0.5s;
+}
+
+.footerModal {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: rgba(45, 17, 147, 0.564);     
+    border-radius: 0px 0px 30px 30px;
+}
+
+.modalButton{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: rgb(0, 255, 157);
+    font-weight: bold;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 500px;
+}
+.modalButton:hover{
+    background-color:transparent;
+    border-style: outset;
+    border-color: rgba(255, 255, 255, 0.425);
+    box-shadow: 2px 1px 21px;
+    transition: all 0.25s ease-out;
+}
+.modalButton:active{
+    background-color: rgba(110, 100, 100, 0.829);
+    font-size: 25px;
+    transition: 0.15s;
+    border-width: 4px;
+    border-color: rgba(125, 220, 234, 0.677);
+    border-style: inset;
+}
+
+/* ------- */
+/* The Modal (background) */
+.easterEggModal {
+    display: none; 
+    position:fixed;   
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */  
+    background-color: rgba(0, 0, 0, 0.578);   
+  }
+  
+  /* Modal Content/Box */
+  .easterEggModalContent {
+    background-color: #ebe5e5;
+    margin: 15% auto;
+    padding-bottom: 30px; 
+    border: 2px solid #000000ba;
+    box-shadow: 1px 10px 10px rgb(12, 12, 12);    
+    width: 30%;   
+    border-radius: 15px;  
+  }
+  
+  .easterEggModalHeader{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.115);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+.easterEggModalText{
+    font-weight: bold;  
+    text-align: center;
+    padding: 20px;
+    padding-right: 100px;
+}
+
+  /* The Close Button */
+  .easterEggClose {
+    float: right;
+    background-color: rgba(0, 0, 0, 0.525);
+    color: rgb(0, 255, 157);
+    font-weight: bold;
+    font-size: 30px;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;  
+    margin-top: 20px;  
+    margin-right: 20px;
+  }
+  
+  .easterEggClose:hover{
+    background-color:transparent;
+    border-style: outset;
+    border-color: rgba(223, 213, 213, 0.551);
+    box-shadow: 2px 1px 21px;
+    transition: all 0.25s ease-out;
+  }
+  .easterEggClose:active{
+    background-color: rgba(110, 100, 100, 0.829);
+    font-size: 25px;
+    transition: 0.15s;
+    border-width: 4px;
+    border-color: rgba(125, 220, 234, 0.677);
+    border-style: inset;
+  }
+  
+/*  ------------------------Images ------------------------------- */
+
+.avatar{
+    margin: auto;
+    display: block;  
+}
+.imgIndexCat{
+    width: 30vw;
+    float: right;
+    margin-right: 40%;
+    margin-top: 50px;
+}
+.IMGportfolio{
+    width: 75%;
+    transition: 0.5s ease-out;    
+}
+.IMGportfolio:hover {   
+    width: 150%;
+    transition: 1s ease-out;    
+    background-color: rgba(4, 14, 13, 0.44); 
+}
+/*  ------------------------Columns/Text ------------------------------- */
+
+.aboutMe{
+    color: #200202b9;
+    border-style: outset;
+    border-width: 3px;
+    border-color: rgba(0, 255, 255, 0.137);    
+    box-shadow: 5px 5px 20px #0bce7381;      
+    height: 40px;
+}
+.aboutMeInformation{   
+    margin: auto;
+    font-size: 28px;
+    border-style: outset;
+    border-color: rgba(26, 208, 208, 0.11);
+    background-color: rgba(21, 42, 46, 0.021);
+    box-shadow: 0px 0px 10px #1b1f1da9;  
+    padding: 20px;  
+    width: 50vw; 
+    text-align: center;   
+}
+
+.contact{
+    color: #220303c7;
+    font-size: 25px;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 50%;
+    border-style: outset;
+    border-color: rgba(159, 157, 172, 0.322);
+}
+
+.describeProject{ 
+    margin-top: 10px;
+    width: 600px;
+    border-style: outset;
+    border-radius: 15px;
+    border-color: rgba(135, 180, 180, 0.493);
+}
+.describeProject:hover {
+    background-color: rgba(245, 245, 245, 0.322);
+}
+
+.indexPageText{
+    margin-left: 20px;
+    margin-top: 40px;
+    font-size: x-large;    
+    margin-right: 20%;
+}
+
+.portfolio{   
+    font-size: 30px;  
+    margin-left: 40px;
+    color:rgba(0, 0, 0, 0.712);
+    margin-top: 50px;
+    width: 75px;       
+}
+
+.portfolio li{
+    list-style: none;
+    margin-left: 80px;
+    color: rgba(0, 0, 0, 0.795); 
+}
+
+.portfolioProjektName{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.portfolioLinkToProject { /* use only button as a link, (deletes all other clickable area for the link  */
+    display: contents;
+}
+
+.resumeTitle{
+    color: #220303c7;
+    font-size: 25px;
+    margin-left: 100px;
+    width: 40vw;
+    border-style: outset;
+    border-color: rgba(159, 157, 172, 0.322);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 30px;    
+}
+.resumeTitleInformation{
+    padding-left: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px; 
+}
+/* -------------------------------------------------------- */
+/*  ---------------  buttons for changing backgrounds   ------------- */
+#circelContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: row;
+    position:absolute;
+    right: 5%;
+}    
+    
+.btnCircelOne{
+        width: 10vw;
+        height: 10vw;  
+        background: linear-gradient(rgb(58, 175, 221), rgb(163, 70, 33));  
+        margin: 10px;
+        border-radius: 100%;
+        transition: 0.2s;
+        border:none;
+}
+.btnCircelOne:hover{
+        width: 12vw;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);        
+} 
+      
+.btnCircelTwo{
+        width: 10vw;
+        height: 10vw;
+        border:none;
+        background: rgba(13, 13, 13, 0.603); 
+        margin: 10px;
+        border-radius: 100%;
+        transition: 0.5s;
+}
+.btnCircelTwo:hover{
+        width: 12vw;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+      
+.btnCircelThree{
+        width: 10vw;
+        height: 10vw;
+        border:none;
+        background: rgba(203, 141, 251, 0.735); 
+        margin: 10px;
+        border-radius: 100%;
+        transition: 0.5s;
+}
+.btnCircelThree:hover{
+        width: 12vw;
+        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+} 
+
+/*  ---------------  Customizing responsive display   ------------- */
+
+@media only screen and (max-width:600px){      
+    .imgIndexCat{
+      width: 100%; 
+      margin-right: 0px;  
+    }   
+
+    .navTextIcons{
+    font-size: 10px;  
+    left: 1px;
+    margin-bottom: 1px; 
+    }
+    .avatar{
+        width: 100%;  
+    }
+
+    .aboutMeInformation{       
+        width: 90%;      
+        border-color: rgba(26, 208, 208, 0.048);
+        padding: 4px;
+        font-size: 18px;    
+        box-shadow: 0px 0px 10px;
+    }
+
+    .button{
+        background-color: rgba(0, 0, 0, 0.568);
+        color: rgb(0, 255, 157);
+        font-weight: bold;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin:auto; 
+    }
+    
+    .contact{
+        color: #220303c7;
+        font-size: 18px;
+        margin-left: 2%;
+        margin-top: 50px;
+        width: 90%;
+        border-style: outset;
+        border-color: rgba(159, 157, 172, 0.322);
+    }
+
+    .easterEggModalContent{
+        width: 90%;
+    }
+    .indexPageText{
+        font-size: 17px;
+        width: 95%;
+        margin:auto;             
+    }  
+
+    .IMGbrokenGlass{
+        display: none;         
+    }
+
+    .IMGportfolio{
+       display: flex;
+        width: 20%;
+        transition: 0.5s ease-out;  
+    }
+
+    .IMGportfolio:hover {          
+        width: 150%;
+        transition: 0.3s ease-out;    
+        background-color: rgba(4, 14, 13, 0.44); 
+    }
+
+    .modal:target {
+        margin-left: 7%;
+        width: 80vw;  
+        transform: translate(-60%, -50%);
+        border-style: outset;
+        background: rgba(170, 171, 207, 0.974);    
+        border: 10px solid;
+        border-radius: 30px;   
+        border-color: rgba(239, 255, 236, 0.367);
+        box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.732);
+        display: block;    
+    }
+
+    .headerModal{
+        font-size: 20px; 
+        text-align: center;
+        padding: 15px;
+        color: rgba(25, 22, 28, 0.694);
+        border-bottom: 4px solid rgba(8, 104, 67, 0.521);
+        box-shadow: 5px 5px 10px rgba(55, 113, 160, 0.589);    
+        border-radius: 30px 30px 0px 0px ;
+    }  
+    
+    .mainTextModal a{
+        color: rgba(2, 247, 255, 0.911);
+        background-color: rgba(18, 19, 18, 0.567);
+        border-style: outset;
+        font-size: 30px;
+        border-radius: 30px;
+        border-color: rgba(43, 120, 120, 0.381);   
+    }
+
+    .modalButton{
+        background-color: rgba(0, 0, 0, 0.568);
+        color: rgb(0, 255, 157);
+        font-weight: bold;
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        margin-left: 5%;
+    } 
+
+    .portfolio{  
+     
+        font-size: 18px;  
+        margin-left: 0%;
+        color:rgba(0, 0, 0, 0.712);
+        width: 98%;
+    }
+
+    .portfolio li{        
+        list-style: none;
+        margin-left: 0%;
+        color: rgba(0, 0, 0, 0.795);       
+    }
+
+    .describeProject{ 
+        margin-top: 20px;
+        width: 100%;
+        border-style: outset;
+        border-radius: 15px;
+        border-color: rgba(135, 180, 180, 0.493);
+        padding: 0%;        
+    }
+
+    .resumeTitle{
+        color: #220303c7;
+        font-size: 19px;
+        margin-left: 0px;       
+        border-style: none;
+        width: 100%;
+        padding: 0%;        
+        margin-top: 20px;
+        box-shadow: none;  
+    }
+    .resumeTitleInformation{
+        width: 100%;
+        padding: 0%;
+        margin-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.089);
+        border-radius: 5px;        
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.39);      
+    }
+}
