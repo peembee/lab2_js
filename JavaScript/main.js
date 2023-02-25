@@ -1,34 +1,26 @@
 // ------------- change background-function -----------------
-let backgroundColor;
-
 function setBackgroundColor(newColor){
-    backgroundColor = newColor;
     document.body.style.background = newColor;
 }
-
-
+setBackgroundColor();
 //  --------------- secret code-funktion --------------------
 window.addEventListener("keypress", codeReader); 
 const easteEggCode = [49,51,51,55]; // keyCode represent: 1337 (int)
 let validateCode = []; // user keyboard input saves here.
 
-
 function codeReader(key){    
-    validateCode.push(key.keyCode);
-    
+    validateCode.push(key.keyCode);    
     let collectCode = validateCode.length - 1; // saves position 
 
     if(validateCode[collectCode] == easteEggCode[collectCode]){ // if input is == secret-code
         let userCodeToString = "";
-
         let CodeToString = () =>{
             let code ="";
             for(let i = 0; i < easteEggCode.length; i++){
                 code += easteEggCode[i];
             }
             return(code);
-        }
-       
+        }       
         for(let i = 0; i < validateCode.length; i++){
             userCodeToString += validateCode[i];
         }
@@ -68,10 +60,8 @@ let closeModal = () =>{
     modal.style.display = "none";
 }
 
-
 // -------------------- get JSON-file ---------------------
 const jsonFile="cv.json"
-
 const getJsonData = async() => {
     
     try{
