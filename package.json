@@ -1,9 +1,9 @@
 {
+  "homepage": "https://peembee.github.io/lab2_js",
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-
-  "scripts":{
+  "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build"
